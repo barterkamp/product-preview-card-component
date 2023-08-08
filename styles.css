@@ -81,11 +81,26 @@ p, h1, h2 {
     padding-right: 16px;
 }
 
+@media (min-width: 768px) {
+    .wrapper {
+        padding: 0;
+    }
+}
+
 .product {
     max-width: 600px;
+    min-height: 450px;
     background-color: var(--white);
     border-radius: 10px;
     overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    .product {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+    }
 }
 
 .product__image {
@@ -94,6 +109,12 @@ p, h1, h2 {
 
 .product__content {
     padding: 24px;
+}
+
+@media (min-width: 768px) {
+    .product__content {
+        padding: 32px;
+    }
 }
 
 .product__header {
