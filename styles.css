@@ -77,8 +77,7 @@ p, h1, h2 {
     place-content: center;
     background-color: var(--cream);
     min-height: 100%;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 28px 16px;
 }
 
 @media (min-width: 768px) {
